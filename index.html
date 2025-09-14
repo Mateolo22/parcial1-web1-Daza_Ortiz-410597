@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MateoBook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">Mateo.Book</h1>
+    <form role="search" class="search">
+      <input type="search" placeholder="Buscar...">
+    </form>
+  </header>
+
+  <!-- LAYOUT PRINCIPAL -->
+  <main class="layout">
+    <!-- COLUMNA IZQUIERDA -->
+    <aside class="sidebar-left">
+      <div class="profile-card">
+        <img src="https://i.pinimg.com/736x/39/60/3c/39603c852c7e1c7714189dce933bdacf.jpg" alt="Avatar" class="avatar">
+        <h2>Mateo Daza</h2>
+        <ul>
+
+          <li>Información</li>
+          <li>Email</li>
+          <li>Teléfono</li>
+          <li>Intereses</li>
+          <li>Situación sentimental</li>
+        </ul>
+        <p>Mis amigos</p>
+        <div class="friends">
+          <img src="https://play.nintendo.com/images/profile-mk-bowser.062bfe67.png" alt="Amigo 1">
+          <img src="https://i.pinimg.com/736x/56/37/63/563763e47da105b6d1fb3f8964d7f4e3.jpg" alt="Amigo 2">
+          <img src="https://static.wikia.nocookie.net/warnerbros/images/2/24/Scoobydoo.jpg/revision/latest/thumbnail/width/360/height/360?cb=20120402195148&path-prefix=es" alt="Amigo 3">
+        </div>
+        <a href="#">Ver todos</a>
+      </div>
+    </aside>
+
+    <!-- COLUMNA CENTRAL -->
+    <section class="main-content">
+      <!-- NAVEGACIÓN -->
+      <nav>
+        <button data-section="muro" class="active">Muro</button>
+        <button data-section="info">Info</button>
+        <button data-section="photos">Photos</button>
+        <button data-section="boxes">Boxes</button>
+      </nav>
+
+      <!-- MURO -->
+      <div id="muro" class="section active">
+        <div class="post-box">
+          <textarea placeholder="Escribe algo..."></textarea>
+          <div class="actions">
+            <button>Enviar</button>
+            <button class="share-btn">Compartir</button>
+          </div>
+        </div>
+        <article class="post">
+          <img src="https://i.pinimg.com/736x/45/88/56/458856c45fb8da1a3c80ecd0a9bf4193.jpg" alt="Usuario" class="avatar">
+          <div>
+            <h3>Mateo Daza</h3>
+            <p>20 abr</p>
+            <p>Mi primer post en MateoBook 😎</p>
+            <div class="post-actions">
+              <button>👍 Me gusta</button>
+              <button>💬 Compartir</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- INFO -->
+      <div id="info" class="section">
+        <article class="card info-layout">
+          <div class="info-details">
+            <h2>Info</h2>
+            <p><strong>Email:</strong> mateo@gmail.com</p>
+            <p><strong>Teléfono:</strong> +57 3145760938</p>
+            <p><strong>Intereses:</strong> Programación, música, viajes e video juegos</p>
+            <p><strong>Situación sentimental:</strong> Es complicado</p>
+            <div class="info-actions">
+              <button class="like-btn">👍 Me gusta</button>
+              <button class="share-btn">💬 Compartir</button>
+            </div>
+          </div>
+          <div class="info-avatar">
+            <img src="https://i.pinimg.com/236x/40/73/7b/40737b516be1ecb1bf2cb8b83a35dda6.jpg" alt="Foto de perfil">
+          </div>
+        </article>
+      </div>
+
+      <!-- PHOTOS -->
+      <div id="photos" class="section">
+        <h2>Photos</h2>
+        <div class="photos-grid">
+          <img src="https://pbs.twimg.com/media/FAOmXYUXsAEDXiQ?format=jpg&name=4096x4096" alt="Foto 1">
+          <img src="https://avatarfiles.alphacoders.com/326/thumb-1920-326406.jpg" alt="Foto 2">
+          <img src="https://i.pinimg.com/736x/73/b9/81/73b98133fecde45cb0998e96468d35f7.jpg" alt="Foto 3">
+     
+    
+        </div>
+      </div>
+
+      <!-- BOXES -->
+      <div id="boxes" class="section">
+        <h2>Boxes</h2>
+        <div class="boxes-grid">
+          <div class="box">Marketplace</div>
+          <div class="box">Eventos</div>
+          <div class="box">Amigos</div>
+          <div class="box">Grupos</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
